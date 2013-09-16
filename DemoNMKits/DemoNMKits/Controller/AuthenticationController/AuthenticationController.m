@@ -25,7 +25,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Social authentication";
+        self.title = @"Social Authentication";
     }
     return self;
 }
@@ -50,8 +50,6 @@
     self.tableView.delegate = self;
     
     self.array = [[NSMutableArray alloc] initWithObjects:@"Facebook",@"Twitter",@"Google Plus", nil];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backButtonDidPressed:)];
 }
 
 - (void)showConfirmAlertWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate withTag:(NSInteger)tag withTitleButtonCancel:(NSString *)titleButtonCancel andTitleButtonOther:(NSString *)otherButtonTitles
@@ -72,11 +70,6 @@
 }
 
 #pragma mark - Action
-
-- (IBAction)backButtonDidPressed:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 

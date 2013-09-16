@@ -49,6 +49,8 @@
 		ECDADB5117E5E42C004CCC36 /* NMKits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDADB5017E5E42C004CCC36 /* NMKits.framework */; };
 		ECDADB5317E5E504004CCC36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDADB5217E5E504004CCC36 /* Default-568h@2x.png */; };
 		ECDADB5417E5E53E004CCC36 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9121717DF067300D24E3A /* StoreKit.framework */; };
+		ECF6210517E6D12400610614 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECF6210317E6D12400610614 /* GooglePlus.bundle */; };
+		ECF6210617E6D12400610614 /* NMShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECF6210417E6D12400610614 /* NMShareKit.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +109,8 @@
 		EC5E907D17E47C72002B42D5 /* appicon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_80.png; sourceTree = "<group>"; };
 		ECDADB5017E5E42C004CCC36 /* NMKits.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMKits.framework; sourceTree = "<group>"; };
 		ECDADB5217E5E504004CCC36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		ECF6210317E6D12400610614 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		ECF6210417E6D12400610614 /* NMShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NMShareKit.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,8 @@
 		819160F117DEB8F000F89F50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECF6210317E6D12400610614 /* GooglePlus.bundle */,
+				ECF6210417E6D12400610614 /* NMShareKit.bundle */,
 				ECDADB5017E5E42C004CCC36 /* NMKits.framework */,
 				81F9121717DF067300D24E3A /* StoreKit.framework */,
 				8191612217DEBCE100F89F50 /* Security.framework */,
@@ -423,8 +429,10 @@
 				8191615017DED79A00F89F50 /* ShareGoogleplusController.xib in Resources */,
 				81F9121217DF012A00D24E3A /* AuthenticationController.xib in Resources */,
 				81F9121E17DF27B500D24E3A /* InAppPurchaseController.xib in Resources */,
+				ECF6210617E6D12400610614 /* NMShareKit.bundle in Resources */,
 				EC5E908017E47C72002B42D5 /* appicon_29.png in Resources */,
 				81F0E69E17E0028C005C6E39 /* InAppPurchase_Products.plist in Resources */,
+				ECF6210517E6D12400610614 /* GooglePlus.bundle in Resources */,
 				EC5E908317E47C72002B42D5 /* appicon_80.png in Resources */,
 				8198C95D17E05AB9000E52A9 /* WebserviceController.xib in Resources */,
 				ECDADB5317E5E504004CCC36 /* Default-568h@2x.png in Resources */,

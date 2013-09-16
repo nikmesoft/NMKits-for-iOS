@@ -60,7 +60,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backButtonDidPressed:)];
     UIBarButtonItem *restoreButton = [[UIBarButtonItem alloc] initWithTitle:@"Restore" style:UIBarButtonItemStyleBordered target:self action:@selector(restoreTapped:)];
     UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
 	[infoButton addTarget:self action:@selector(infoTapped:) forControlEvents:UIControlEventTouchUpInside];
@@ -102,11 +101,6 @@
 }
 
 #pragma mark - Action
-
-- (IBAction)backButtonDidPressed:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (IBAction)restoreTapped:(id)sender
 {

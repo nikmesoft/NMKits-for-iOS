@@ -54,16 +54,9 @@
     self.tableView.dataSource = self;
     
     self.array = [[NSMutableArray alloc] initWithObjects:@"Share Status", @"Share URL", nil];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backButtonDidPressed:)];
 }
 
 #pragma mark - Action
-
-- (IBAction)backButtonDidPressed:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 

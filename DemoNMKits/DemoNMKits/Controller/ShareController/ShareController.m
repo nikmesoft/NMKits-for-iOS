@@ -59,8 +59,6 @@
     self.tableView.delegate = self;
     
     self.array = [[NSMutableArray alloc] initWithObjects:@"Facebook",@"Twitter",@"GooglePlus",@"E-mail", nil];
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backButtonDidPressed:)];
 }
 
 - (NSString *)getAppinfo
@@ -86,12 +84,6 @@
 }
 
 #pragma mark - Action
-
-- (IBAction)backButtonDidPressed:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 #pragma mark - UITableViewDataSource, UITableViewDelegate
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

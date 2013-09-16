@@ -25,7 +25,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Webservice";
+        self.title = @"RESTful + JSON WS";
     }
     return self;
 }
@@ -53,7 +53,6 @@
 
 - (void)setXib
 {
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(backButtonDidPressed:)];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStyleBordered target:self action:@selector(reloadWebservice:)];
 }
 
@@ -68,10 +67,6 @@
 
 #pragma mark - Action
 
-- (IBAction)backButtonDidPressed:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
 - (IBAction)reloadWebservice:(id)sender
 {
