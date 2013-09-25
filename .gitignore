@@ -16,3 +16,7 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+
+DemoNMKits/NMKits.framework/Headers
+
+DemoNMKits/NMKits.framework/NMKits
