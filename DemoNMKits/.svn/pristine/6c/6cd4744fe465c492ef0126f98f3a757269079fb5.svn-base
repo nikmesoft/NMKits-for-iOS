@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		811932ED17E1C86E00E4F962 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811932EC17E1C86E00E4F962 /* AppDelegate.m */; };
+		819160F317DEB8F000F89F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819160F217DEB8F000F89F50 /* UIKit.framework */; };
+		819160F517DEB8F000F89F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819160F417DEB8F000F89F50 /* Foundation.framework */; };
+		819160F717DEB8F000F89F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819160F617DEB8F000F89F50 /* CoreGraphics.framework */; };
+		819160F917DEB8F000F89F50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 819160F817DEB8F000F89F50 /* CoreData.framework */; };
+		819160FF17DEB8F000F89F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 819160FD17DEB8F000F89F50 /* InfoPlist.strings */; };
+		8191610117DEB8F000F89F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191610017DEB8F000F89F50 /* main.m */; };
+		8191610E17DEB8F000F89F50 /* DemoNMKits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8191610C17DEB8F000F89F50 /* DemoNMKits.xcdatamodeld */; };
+		8191611517DEBC9F00F89F50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611417DEBC9F00F89F50 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8191611717DEBCAB00F89F50 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611617DEBCAB00F89F50 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8191611917DEBCBC00F89F50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611817DEBCBC00F89F50 /* SystemConfiguration.framework */; };
+		8191611B17DEBCC100F89F50 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611A17DEBCC100F89F50 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8191611D17DEBCCA00F89F50 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611C17DEBCCA00F89F50 /* Twitter.framework */; };
+		8191611F17DEBCD000F89F50 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191611E17DEBCD000F89F50 /* MessageUI.framework */; };
+		8191612117DEBCD800F89F50 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191612017DEBCD800F89F50 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8191612317DEBCE100F89F50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8191612217DEBCE100F89F50 /* Security.framework */; };
+		8191613317DEBD8300F89F50 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191613117DEBD8300F89F50 /* MainController.m */; };
+		8191613417DEBD8300F89F50 /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191613217DEBD8300F89F50 /* MainController.xib */; };
+		8191613917DEC97600F89F50 /* ShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191613717DEC97600F89F50 /* ShareController.m */; };
+		8191613A17DEC97600F89F50 /* ShareController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191613817DEC97600F89F50 /* ShareController.xib */; };
+		8191613F17DECEC900F89F50 /* ShareFacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191613D17DECEC900F89F50 /* ShareFacebookController.m */; };
+		8191614017DECEC900F89F50 /* ShareFacebookController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191613E17DECEC900F89F50 /* ShareFacebookController.xib */; };
+		8191614F17DED79A00F89F50 /* ShareGoogleplusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8191614D17DED79A00F89F50 /* ShareGoogleplusController.m */; };
+		8191615017DED79A00F89F50 /* ShareGoogleplusController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8191614E17DED79A00F89F50 /* ShareGoogleplusController.xib */; };
+		8198C95C17E05AB9000E52A9 /* WebserviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8198C95A17E05AB9000E52A9 /* WebserviceController.m */; };
+		8198C95D17E05AB9000E52A9 /* WebserviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8198C95B17E05AB9000E52A9 /* WebserviceController.xib */; };
+		8198C96B17E074CD000E52A9 /* Webservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 8198C96A17E074CD000E52A9 /* Webservice.m */; };
+		81F0E69E17E0028C005C6E39 /* InAppPurchase_Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F0E69D17E0028C005C6E39 /* InAppPurchase_Products.plist */; };
+		81F9121117DF012A00D24E3A /* AuthenticationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9120F17DF012A00D24E3A /* AuthenticationController.m */; };
+		81F9121217DF012A00D24E3A /* AuthenticationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F9121017DF012A00D24E3A /* AuthenticationController.xib */; };
+		81F9121D17DF27B500D24E3A /* InAppPurchaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9121B17DF27B500D24E3A /* InAppPurchaseController.m */; };
+		81F9121E17DF27B500D24E3A /* InAppPurchaseController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F9121C17DF27B500D24E3A /* InAppPurchaseController.xib */; };
+		81F9122617DF2D2900D24E3A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F9122517DF2D2900D24E3A /* MBProgressHUD.m */; };
+		EC5E907E17E47C72002B42D5 /* appicon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907817E47C72002B42D5 /* appicon_114.png */; };
+		EC5E907F17E47C72002B42D5 /* appicon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907917E47C72002B42D5 /* appicon_120.png */; };
+		EC5E908017E47C72002B42D5 /* appicon_29.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907A17E47C72002B42D5 /* appicon_29.png */; };
+		EC5E908117E47C72002B42D5 /* appicon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907B17E47C72002B42D5 /* appicon_57.png */; };
+		EC5E908217E47C72002B42D5 /* appicon_58.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907C17E47C72002B42D5 /* appicon_58.png */; };
+		EC5E908317E47C72002B42D5 /* appicon_80.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5E907D17E47C72002B42D5 /* appicon_80.png */; };
+		EC918C1E17F3C43F0092BCF3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F9121717DF067300D24E3A /* StoreKit.framework */; };
+		ECDADB5117E5E42C004CCC36 /* NMKits.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDADB5017E5E42C004CCC36 /* NMKits.framework */; };
+		ECDADB5317E5E504004CCC36 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECDADB5217E5E504004CCC36 /* Default-568h@2x.png */; };
+		ECF6210517E6D12400610614 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECF6210317E6D12400610614 /* GooglePlus.bundle */; };
+		ECF6210617E6D12400610614 /* NMShareKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECF6210417E6D12400610614 /* NMShareKit.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		811932EB17E1C86E00E4F962 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		811932EC17E1C86E00E4F962 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		819160EF17DEB8F000F89F50 /* DemoNMKits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoNMKits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		819160F217DEB8F000F89F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		819160F417DEB8F000F89F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		819160F617DEB8F000F89F50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		819160F817DEB8F000F89F50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		819160FC17DEB8F000F89F50 /* DemoNMKits-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoNMKits-Info.plist"; sourceTree = "<group>"; };
+		819160FE17DEB8F000F89F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8191610017DEB8F000F89F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8191610217DEB8F000F89F50 /* DemoNMKits-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoNMKits-Prefix.pch"; sourceTree = "<group>"; };
+		8191610D17DEB8F000F89F50 /* DemoNMKits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoNMKits.xcdatamodel; sourceTree = "<group>"; };
+		8191611417DEBC9F00F89F50 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8191611617DEBCAB00F89F50 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8191611817DEBCBC00F89F50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8191611A17DEBCC100F89F50 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8191611C17DEBCCA00F89F50 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		8191611E17DEBCD000F89F50 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8191612017DEBCD800F89F50 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		8191612217DEBCE100F89F50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8191613017DEBD8300F89F50 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		8191613117DEBD8300F89F50 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		8191613217DEBD8300F89F50 /* MainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
+		8191613617DEC97600F89F50 /* ShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareController.h; sourceTree = "<group>"; };
+		8191613717DEC97600F89F50 /* ShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareController.m; sourceTree = "<group>"; };
+		8191613817DEC97600F89F50 /* ShareController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareController.xib; sourceTree = "<group>"; };
+		8191613C17DECEC900F89F50 /* ShareFacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFacebookController.h; sourceTree = "<group>"; };
+		8191613D17DECEC900F89F50 /* ShareFacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFacebookController.m; sourceTree = "<group>"; };
+		8191613E17DECEC900F89F50 /* ShareFacebookController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareFacebookController.xib; sourceTree = "<group>"; };
+		8191614C17DED79A00F89F50 /* ShareGoogleplusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareGoogleplusController.h; sourceTree = "<group>"; };
+		8191614D17DED79A00F89F50 /* ShareGoogleplusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareGoogleplusController.m; sourceTree = "<group>"; };
+		8191614E17DED79A00F89F50 /* ShareGoogleplusController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShareGoogleplusController.xib; sourceTree = "<group>"; };
+		8198C95917E05AB9000E52A9 /* WebserviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceController.h; sourceTree = "<group>"; };
+		8198C95A17E05AB9000E52A9 /* WebserviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebserviceController.m; sourceTree = "<group>"; };
+		8198C95B17E05AB9000E52A9 /* WebserviceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebserviceController.xib; sourceTree = "<group>"; };
+		8198C96917E074CD000E52A9 /* Webservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Webservice.h; sourceTree = "<group>"; };
+		8198C96A17E074CD000E52A9 /* Webservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Webservice.m; sourceTree = "<group>"; };
+		81F0E69D17E0028C005C6E39 /* InAppPurchase_Products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InAppPurchase_Products.plist; sourceTree = "<group>"; };
+		81F9120E17DF012A00D24E3A /* AuthenticationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationController.h; sourceTree = "<group>"; };
+		81F9120F17DF012A00D24E3A /* AuthenticationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationController.m; sourceTree = "<group>"; };
+		81F9121017DF012A00D24E3A /* AuthenticationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthenticationController.xib; sourceTree = "<group>"; };
+		81F9121717DF067300D24E3A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		81F9121A17DF27B500D24E3A /* InAppPurchaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppPurchaseController.h; sourceTree = "<group>"; };
+		81F9121B17DF27B500D24E3A /* InAppPurchaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppPurchaseController.m; sourceTree = "<group>"; };
+		81F9121C17DF27B500D24E3A /* InAppPurchaseController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InAppPurchaseController.xib; sourceTree = "<group>"; };
+		81F9122417DF2D2900D24E3A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		81F9122517DF2D2900D24E3A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		EC5E907817E47C72002B42D5 /* appicon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_114.png; sourceTree = "<group>"; };
+		EC5E907917E47C72002B42D5 /* appicon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_120.png; sourceTree = "<group>"; };
+		EC5E907A17E47C72002B42D5 /* appicon_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_29.png; sourceTree = "<group>"; };
+		EC5E907B17E47C72002B42D5 /* appicon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_57.png; sourceTree = "<group>"; };
+		EC5E907C17E47C72002B42D5 /* appicon_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_58.png; sourceTree = "<group>"; };
+		EC5E907D17E47C72002B42D5 /* appicon_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon_80.png; sourceTree = "<group>"; };
+		EC918C1A17F3C0C30092BCF3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EC918C1C17F3C0F00092BCF3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		ECDADB5017E5E42C004CCC36 /* NMKits.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMKits.framework; sourceTree = "<group>"; };
+		ECDADB5217E5E504004CCC36 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		ECF6210317E6D12400610614 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
+		ECF6210417E6D12400610614 /* NMShareKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NMShareKit.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		819160EC17DEB8F000F89F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC918C1E17F3C43F0092BCF3 /* StoreKit.framework in Frameworks */,
+				8191612317DEBCE100F89F50 /* Security.framework in Frameworks */,
+				ECDADB5117E5E42C004CCC36 /* NMKits.framework in Frameworks */,
+				8191612117DEBCD800F89F50 /* AdSupport.framework in Frameworks */,
+				8191611F17DEBCD000F89F50 /* MessageUI.framework in Frameworks */,
+				8191611D17DEBCCA00F89F50 /* Twitter.framework in Frameworks */,
+				8191611B17DEBCC100F89F50 /* Social.framework in Frameworks */,
+				8191611917DEBCBC00F89F50 /* SystemConfiguration.framework in Frameworks */,
+				8191611717DEBCAB00F89F50 /* Accounts.framework in Frameworks */,
+				8191611517DEBC9F00F89F50 /* QuartzCore.framework in Frameworks */,
+				819160F317DEB8F000F89F50 /* UIKit.framework in Frameworks */,
+				819160F517DEB8F000F89F50 /* Foundation.framework in Frameworks */,
+				819160F717DEB8F000F89F50 /* CoreGraphics.framework in Frameworks */,
+				819160F917DEB8F000F89F50 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		819160E617DEB8F000F89F50 = {
+			isa = PBXGroup;
+			children = (
+				819160FA17DEB8F000F89F50 /* DemoNMKits */,
+				819160F117DEB8F000F89F50 /* Frameworks */,
+				819160F017DEB8F000F89F50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		819160F017DEB8F000F89F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				819160EF17DEB8F000F89F50 /* DemoNMKits.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		819160F117DEB8F000F89F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC918C1C17F3C0F00092BCF3 /* CoreTelephony.framework */,
+				EC918C1A17F3C0C30092BCF3 /* CFNetwork.framework */,
+				ECF6210317E6D12400610614 /* GooglePlus.bundle */,
+				ECF6210417E6D12400610614 /* NMShareKit.bundle */,
+				ECDADB5017E5E42C004CCC36 /* NMKits.framework */,
+				81F9121717DF067300D24E3A /* StoreKit.framework */,
+				8191612217DEBCE100F89F50 /* Security.framework */,
+				8191612017DEBCD800F89F50 /* AdSupport.framework */,
+				8191611E17DEBCD000F89F50 /* MessageUI.framework */,
+				8191611C17DEBCCA00F89F50 /* Twitter.framework */,
+				8191611A17DEBCC100F89F50 /* Social.framework */,
+				8191611817DEBCBC00F89F50 /* SystemConfiguration.framework */,
+				8191611617DEBCAB00F89F50 /* Accounts.framework */,
+				8191611417DEBC9F00F89F50 /* QuartzCore.framework */,
+				819160F217DEB8F000F89F50 /* UIKit.framework */,
+				819160F417DEB8F000F89F50 /* Foundation.framework */,
+				819160F617DEB8F000F89F50 /* CoreGraphics.framework */,
+				819160F817DEB8F000F89F50 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		819160FA17DEB8F000F89F50 /* DemoNMKits */ = {
+			isa = PBXGroup;
+			children = (
+				81F9121317DF05AE00D24E3A /* Libraries */,
+				8191612E17DEBD5700F89F50 /* CoreData */,
+				8191612D17DEBD4700F89F50 /* Appdelegate */,
+				8191612C17DEBD3C00F89F50 /* Controller */,
+				8191614117DED56300F89F50 /* Resource */,
+				819160FB17DEB8F000F89F50 /* Supporting Files */,
+			);
+			path = DemoNMKits;
+			sourceTree = "<group>";
+		};
+		819160FB17DEB8F000F89F50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				819160FC17DEB8F000F89F50 /* DemoNMKits-Info.plist */,
+				819160FD17DEB8F000F89F50 /* InfoPlist.strings */,
+				8191610017DEB8F000F89F50 /* main.m */,
+				8191610217DEB8F000F89F50 /* DemoNMKits-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8191612C17DEBD3C00F89F50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8198C95817E05A10000E52A9 /* WebserviceController */,
+				81F9121917DF279B00D24E3A /* InAppPurchaseController */,
+				81F9120D17DF011800D24E3A /* AuthenticationController */,
+				8191613517DEC57B00F89F50 /* ShareController */,
+				8191612F17DEBD6800F89F50 /* MainController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8191612D17DEBD4700F89F50 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				811932EB17E1C86E00E4F962 /* AppDelegate.h */,
+				811932EC17E1C86E00E4F962 /* AppDelegate.m */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		8191612E17DEBD5700F89F50 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8191610C17DEB8F000F89F50 /* DemoNMKits.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8191612F17DEBD6800F89F50 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				8191613017DEBD8300F89F50 /* MainController.h */,
+				8191613117DEBD8300F89F50 /* MainController.m */,
+				8191613217DEBD8300F89F50 /* MainController.xib */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		8191613517DEC57B00F89F50 /* ShareController */ = {
+			isa = PBXGroup;
+			children = (
+				8191614B17DED78C00F89F50 /* ShareGoogleplusController */,
+				8191613B17DECEBB00F89F50 /* ShareFacebookController */,
+				8191613617DEC97600F89F50 /* ShareController.h */,
+				8191613717DEC97600F89F50 /* ShareController.m */,
+				8191613817DEC97600F89F50 /* ShareController.xib */,
+			);
+			path = ShareController;
+			sourceTree = "<group>";
+		};
+		8191613B17DECEBB00F89F50 /* ShareFacebookController */ = {
+			isa = PBXGroup;
+			children = (
+				8191613C17DECEC900F89F50 /* ShareFacebookController.h */,
+				8191613D17DECEC900F89F50 /* ShareFacebookController.m */,
+				8191613E17DECEC900F89F50 /* ShareFacebookController.xib */,
+			);
+			path = ShareFacebookController;
+			sourceTree = "<group>";
+		};
+		8191614117DED56300F89F50 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				81F0E69C17E00248005C6E39 /* DataInApp */,
+				8191614217DED56E00F89F50 /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8191614217DED56E00F89F50 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ECDADB5217E5E504004CCC36 /* Default-568h@2x.png */,
+				EC5E907717E47C72002B42D5 /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8191614B17DED78C00F89F50 /* ShareGoogleplusController */ = {
+			isa = PBXGroup;
+			children = (
+				8191614C17DED79A00F89F50 /* ShareGoogleplusController.h */,
+				8191614D17DED79A00F89F50 /* ShareGoogleplusController.m */,
+				8191614E17DED79A00F89F50 /* ShareGoogleplusController.xib */,
+			);
+			path = ShareGoogleplusController;
+			sourceTree = "<group>";
+		};
+		8198C95817E05A10000E52A9 /* WebserviceController */ = {
+			isa = PBXGroup;
+			children = (
+				8198C96817E074B6000E52A9 /* Webservice */,
+				8198C95917E05AB9000E52A9 /* WebserviceController.h */,
+				8198C95A17E05AB9000E52A9 /* WebserviceController.m */,
+				8198C95B17E05AB9000E52A9 /* WebserviceController.xib */,
+			);
+			path = WebserviceController;
+			sourceTree = "<group>";
+		};
+		8198C96817E074B6000E52A9 /* Webservice */ = {
+			isa = PBXGroup;
+			children = (
+				8198C96917E074CD000E52A9 /* Webservice.h */,
+				8198C96A17E074CD000E52A9 /* Webservice.m */,
+			);
+			path = Webservice;
+			sourceTree = "<group>";
+		};
+		81F0E69C17E00248005C6E39 /* DataInApp */ = {
+			isa = PBXGroup;
+			children = (
+				81F0E69D17E0028C005C6E39 /* InAppPurchase_Products.plist */,
+			);
+			path = DataInApp;
+			sourceTree = "<group>";
+		};
+		81F9120D17DF011800D24E3A /* AuthenticationController */ = {
+			isa = PBXGroup;
+			children = (
+				81F9120E17DF012A00D24E3A /* AuthenticationController.h */,
+				81F9120F17DF012A00D24E3A /* AuthenticationController.m */,
+				81F9121017DF012A00D24E3A /* AuthenticationController.xib */,
+			);
+			path = AuthenticationController;
+			sourceTree = "<group>";
+		};
+		81F9121317DF05AE00D24E3A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				81F9122317DF2D1700D24E3A /* MBProgressHUD */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		81F9121917DF279B00D24E3A /* InAppPurchaseController */ = {
+			isa = PBXGroup;
+			children = (
+				81F9121A17DF27B500D24E3A /* InAppPurchaseController.h */,
+				81F9121B17DF27B500D24E3A /* InAppPurchaseController.m */,
+				81F9121C17DF27B500D24E3A /* InAppPurchaseController.xib */,
+			);
+			path = InAppPurchaseController;
+			sourceTree = "<group>";
+		};
+		81F9122317DF2D1700D24E3A /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				81F9122417DF2D2900D24E3A /* MBProgressHUD.h */,
+				81F9122517DF2D2900D24E3A /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		EC5E907717E47C72002B42D5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E907817E47C72002B42D5 /* appicon_114.png */,
+				EC5E907917E47C72002B42D5 /* appicon_120.png */,
+				EC5E907A17E47C72002B42D5 /* appicon_29.png */,
+				EC5E907B17E47C72002B42D5 /* appicon_57.png */,
+				EC5E907C17E47C72002B42D5 /* appicon_58.png */,
+				EC5E907D17E47C72002B42D5 /* appicon_80.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		819160EE17DEB8F000F89F50 /* DemoNMKits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8191611117DEB8F000F89F50 /* Build configuration list for PBXNativeTarget "DemoNMKits" */;
+			buildPhases = (
+				819160EB17DEB8F000F89F50 /* Sources */,
+				819160EC17DEB8F000F89F50 /* Frameworks */,
+				819160ED17DEB8F000F89F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoNMKits;
+			productName = DemoNMKits;
+			productReference = 819160EF17DEB8F000F89F50 /* DemoNMKits.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		819160E717DEB8F000F89F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Nikmesoft;
+			};
+			buildConfigurationList = 819160EA17DEB8F000F89F50 /* Build configuration list for PBXProject "DemoNMKits" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 819160E617DEB8F000F89F50;
+			productRefGroup = 819160F017DEB8F000F89F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				819160EE17DEB8F000F89F50 /* DemoNMKits */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		819160ED17DEB8F000F89F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819160FF17DEB8F000F89F50 /* InfoPlist.strings in Resources */,
+				EC5E907E17E47C72002B42D5 /* appicon_114.png in Resources */,
+				EC5E908117E47C72002B42D5 /* appicon_57.png in Resources */,
+				8191613417DEBD8300F89F50 /* MainController.xib in Resources */,
+				8191613A17DEC97600F89F50 /* ShareController.xib in Resources */,
+				8191614017DECEC900F89F50 /* ShareFacebookController.xib in Resources */,
+				8191615017DED79A00F89F50 /* ShareGoogleplusController.xib in Resources */,
+				81F9121217DF012A00D24E3A /* AuthenticationController.xib in Resources */,
+				81F9121E17DF27B500D24E3A /* InAppPurchaseController.xib in Resources */,
+				ECF6210617E6D12400610614 /* NMShareKit.bundle in Resources */,
+				EC5E908017E47C72002B42D5 /* appicon_29.png in Resources */,
+				81F0E69E17E0028C005C6E39 /* InAppPurchase_Products.plist in Resources */,
+				ECF6210517E6D12400610614 /* GooglePlus.bundle in Resources */,
+				EC5E908317E47C72002B42D5 /* appicon_80.png in Resources */,
+				8198C95D17E05AB9000E52A9 /* WebserviceController.xib in Resources */,
+				ECDADB5317E5E504004CCC36 /* Default-568h@2x.png in Resources */,
+				EC5E907F17E47C72002B42D5 /* appicon_120.png in Resources */,
+				EC5E908217E47C72002B42D5 /* appicon_58.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		819160EB17DEB8F000F89F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8191610117DEB8F000F89F50 /* main.m in Sources */,
+				8191610E17DEB8F000F89F50 /* DemoNMKits.xcdatamodeld in Sources */,
+				8191613317DEBD8300F89F50 /* MainController.m in Sources */,
+				8191613917DEC97600F89F50 /* ShareController.m in Sources */,
+				8191613F17DECEC900F89F50 /* ShareFacebookController.m in Sources */,
+				8191614F17DED79A00F89F50 /* ShareGoogleplusController.m in Sources */,
+				81F9121117DF012A00D24E3A /* AuthenticationController.m in Sources */,
+				81F9121D17DF27B500D24E3A /* InAppPurchaseController.m in Sources */,
+				81F9122617DF2D2900D24E3A /* MBProgressHUD.m in Sources */,
+				8198C95C17E05AB9000E52A9 /* WebserviceController.m in Sources */,
+				8198C96B17E074CD000E52A9 /* Webservice.m in Sources */,
+				811932ED17E1C86E00E4F962 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		819160FD17DEB8F000F89F50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				819160FE17DEB8F000F89F50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8191610F17DEB8F000F89F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8191611017DEB8F000F89F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8191611217DEB8F000F89F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh NGUYEN (FVYB42ZFR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh NGUYEN (FVYB42ZFR4)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"/Users/linhnguyen_m01/Documents/google-plus-ios-sdk-1.3.0",
+					/Users/linhnguyen_m01/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoNMKits/DemoNMKits-Prefix.pch";
+				INFOPLIST_FILE = "DemoNMKits/DemoNMKits-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4A6D2771-BEA3-453A-85D0-310E7DDE1CF5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A6D2771-BEA3-453A-85D0-310E7DDE1CF5";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8191611317DEB8F000F89F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Linh NGUYEN (FVYB42ZFR4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Linh NGUYEN (FVYB42ZFR4)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"/Users/linhnguyen_m01/Documents/google-plus-ios-sdk-1.3.0",
+					/Users/linhnguyen_m01/Documents/FacebookSDK,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DemoNMKits/DemoNMKits-Prefix.pch";
+				INFOPLIST_FILE = "DemoNMKits/DemoNMKits-Info.plist";
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4A6D2771-BEA3-453A-85D0-310E7DDE1CF5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4A6D2771-BEA3-453A-85D0-310E7DDE1CF5";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		819160EA17DEB8F000F89F50 /* Build configuration list for PBXProject "DemoNMKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8191610F17DEB8F000F89F50 /* Debug */,
+				8191611017DEB8F000F89F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8191611117DEB8F000F89F50 /* Build configuration list for PBXNativeTarget "DemoNMKits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8191611217DEB8F000F89F50 /* Debug */,
+				8191611317DEB8F000F89F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8191610C17DEB8F000F89F50 /* DemoNMKits.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8191610D17DEB8F000F89F50 /* DemoNMKits.xcdatamodel */,
+			);
+			currentVersion = 8191610D17DEB8F000F89F50 /* DemoNMKits.xcdatamodel */;
+			name = DemoNMKits.xcdatamodeld;
+			path = ../DemoNMKits.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 819160E717DEB8F000F89F50 /* Project object */;
+}

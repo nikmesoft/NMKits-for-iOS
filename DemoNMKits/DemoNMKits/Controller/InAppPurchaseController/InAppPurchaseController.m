@@ -93,6 +93,9 @@
         if(successfully)
         {
             self.products = products;
+            for (NSString *s in products) {
+                DBG(@"%@",s);
+            }
             [self.tableView reloadData];
         } else {
             [NMUIHelper showAlertWithTitle:@"DemoNMKits" message:errror.description delegate:nil tag:0 cancelButtonTitle:@"OK" okButtonTitle:nil];

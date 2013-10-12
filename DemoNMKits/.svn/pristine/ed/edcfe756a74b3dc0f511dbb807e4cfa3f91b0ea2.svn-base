@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>product0.000000</key>
+	<string>com.nikmesoft.demonmkits.items.demo1</string>
+	<key>product0.000001</key>
+	<string>com.nikmesoft.demonmkits.items.demo2</string>
+	<key>product0.000002</key>
+	<string>com.nikmesoft.demonmkits.items.demo3</string>
+</dict>
+</plist>

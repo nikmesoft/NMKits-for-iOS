@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F3A4D497-1584-46A2-8877-F313D96A6D5B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DemoNMKits</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>912B7DA3-1D5D-49B6-9058-03451DF3DC42</key>
+		<string>http://192.168.1.254/svn/Libraries/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NMKits/Sources/iOS/DemoNMKits/DemoNMKits.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>912B7DA3-1D5D-49B6-9058-03451DF3DC42</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>912B7DA3-1D5D-49B6-9058-03451DF3DC42</key>
+		<string>http://192.168.1.254/svn/Libraries</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.1.254/svn/Libraries/trunk/NMKits/Sources/iOS/DemoNMKits/DemoNMKits.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>912B7DA3-1D5D-49B6-9058-03451DF3DC42</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>912B7DA3-1D5D-49B6-9058-03451DF3DC42</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Libraries</string>
+		</dict>
+	</array>
+</dict>
+</plist>

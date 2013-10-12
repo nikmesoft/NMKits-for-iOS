@@ -53,7 +53,10 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Share Status", @"Share URL", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"Share Status",@"Share Photo", @"Share URL", nil];
+    
+    UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleBordered target:self action:@selector(logoutTapped:)];
+    self.navigationItem.rightBarButtonItem = logoutButton;
 }
 
 #pragma mark - Action
@@ -96,6 +99,19 @@
             break;
         case 1:
         {
+            // Share text
+            [[NMShareKit sharedManager] gPlusPostPhoto:SHARE_IMAGE message:SHARE_MESSAGE completionHandler:^(BOOL sucessfully,NSError *error,NSDictionary* dataDict)
+             {
+                 if (sucessfully) {
+                     [NMUIHelper showAlertWithTitle:SHARE_TITLE message:@"Shared" delegate:nil tag:0 cancelButtonTitle:@"OK" okButtonTitle:nil];
+                 } else {
+                     [NMUIHelper showAlertWithTitle:SHARE_TITLE message:error.description delegate:nil tag:0 cancelButtonTitle:@"OK" okButtonTitle:nil];
+                 }
+             }];
+        }
+            break;
+        case 2:
+        {
             // Share URL
             [[NMShareKit sharedManager] gPlusShareURL:SHARE_LINK message:SHARE_MESSAGE completionHandler:^(BOOL sucessfully,NSError *error,NSDictionary* dataDict){
                 if (sucessfully) {
@@ -109,6 +125,17 @@
         default:
             break;
     }
+}
+
+-(void) logoutTapped:(id)sender
+{
+    [[NMShareKit sharedManager] gPlusLogout:^(BOOL sucessfully,NSError *error, NSDictionary *dataDict) {
+        if (sucessfully) {
+            [NMUIHelper showAlertWithTitle:SHARE_TITLE message:@"Successfully!" delegate:nil tag:0 cancelButtonTitle:@"OK" okButtonTitle:nil];
+        } else {
+            [NMUIHelper showAlertWithTitle:SHARE_TITLE message:error.description delegate:nil tag:0 cancelButtonTitle:@"OK" okButtonTitle:nil];
+        }
+    }];
 }
 
 @end
